@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Posts
+  ul#posts
+    - posts.forEach(function (post) {
+    li
+      span(data-id=post._id)= post.name
+    - });
+    
+  script(src="/socket.io/socket.io.js")
+  script(src="/media/js/index.js")

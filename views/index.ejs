@@ -1,0 +1,22 @@
+<%- contentFor('content') %>
+  
+  <form id="post-form" action="." method="post">
+    <div class="input">
+      <input type="text" value="" />
+    </div>
+    <div class="submit">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  
+  <ul id="posts">
+    <% posts.forEach(function (post) { %>
+        <% include public/index-post %>
+    <% }); %>
+  </ul>
+  <script id="index-post" type="text/template">
+    <%- rawRender('views/public/index-post.ejs') %>
+  </script>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/media/js/index.js"></script>

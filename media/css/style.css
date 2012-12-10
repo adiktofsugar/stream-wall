@@ -1,0 +1,54 @@
+body {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+form {
+  
+  padding:20px 5%;
+  background-color:black;
+}
+  form .input,
+  form .submit{
+    width:95%;
+  }
+    form .input input {
+      width:100%;
+      padding:0px 3px;
+      line-height:25px;
+    }
+  form .submit {
+    text-align:left;
+  }
+    form .submit button{
+      display:inline-block;
+      text-align:center;
+      background: #09d;
+      border:1px solid #444;
+      color:white;
+      font-weight:bold;
+      font-family:arial;
+      font-size:14px;
+      padding:7px 15px;
+      border-radius:3px;
+    }
+    
+#posts {
+  list-style-type:none;
+  margin:20px;
+  padding:0;
+}
+  #posts .post {
+    line-height:25px;
+    padding:3px;
+    border-top:1px solid #aaa;
+    width:100%;
+    word-break: break-all;
+  }
+  #posts .post:first-child {
+    border-top:none;
+  }
